@@ -1,4 +1,23 @@
 
 .section.section-ways-to-brew {
+    .grid {
+        display: grid;
+        grid-template-columns: [lef] 1fr [mid] 1fr [rig];
+        grid-template-rows: [top] 1fr [bot];
+        margin-top: 39px;
+    
+        &-right {
+            text-align: center;
+            margin-top: 3em;
+        }
+    }
 
+    .link-wrapper {
+        text-align: center;
+
+        .link {
+            margin: 10px;
+            display: inline-block;
+        }
+    }
 }

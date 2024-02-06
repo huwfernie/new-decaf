@@ -15,8 +15,10 @@ function WaysToBrew() {
           <p>An Italian classic</p>
         </div>
       </div>
-      <Link text="Learn More" icon="external" url="" />
-      <Link text="Buy Now" icon="external" url="" />
+      <div className="link-wrapper">
+        <Link text="Learn More" icon="external" url="" />
+        <Link text="Buy Now" icon="external" url="" />
+      </div>
     </Section>
   );
 }
