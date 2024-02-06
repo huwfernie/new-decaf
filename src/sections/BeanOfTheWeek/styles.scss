@@ -1,14 +1,25 @@
 
 .section.section-bean-of-the-week {
+    background-color: #75add1;
+
     .grid {
         display: grid;
         grid-template-columns: [lef] 1fr [mid] 1fr [rig];
         grid-template-rows: [top] 1fr [bot];
+        column-gap: 20px;
         margin-top: 39px;
     
         &-left {
             text-align: center;
             margin-top: 3em;
+        }
+
+        &-right {
+            overflow: hidden;
+
+        .image {
+            height: 370px;
+        }
         }
     }
 
@@ -18,6 +29,7 @@
         .link {
             margin: 10px;
             display: inline-block;
+            color: #fafafa;
         }
     }
 }
