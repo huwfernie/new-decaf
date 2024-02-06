@@ -1,4 +1,29 @@
-
 .section.section-hero {
-    min-height: 75vh;
+    height: 75vh;
+    min-height: 600px;
+
+    .safe-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+    }
+
+    .hero-headline {
+        display: inline-block;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .hero-image {
+        display: block;
+        align-self: center;
+    }
+
+    .hero-tagline {
+        display: block;
+        align-self: center;
+    }
 }

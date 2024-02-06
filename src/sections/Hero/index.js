@@ -1,13 +1,12 @@
 import './styles.scss';
 import Section from '../../components/section';
-import logo from "./logo.svg";
 
 function Hero() {
   return (
     <Section name="hero">
-      <h1>New Decaf</h1>
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Brew Something New</p>
+      <h1 className="hero-headline">New Decaf</h1>
+      <img src="/images/logo192.png" className="hero-image" alt="logo" />
+      <p className="hero-tagline" >Brew Something New</p>
     </Section>
   );
 }
