@@ -14,7 +14,9 @@ function BeanOfTheWeek() {
           <img src="/images/logo192.png" className="App-logo" alt="bag of coffee beans" />
         </div>
       </div>
-      <Link text="Shop Now" icon="external" url="" />
+      <div className="link-wrapper">
+        <Link text="Link" icon="external" url="" />
+      </div>
     </Section>
   );
 }

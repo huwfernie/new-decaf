@@ -1,4 +1,18 @@
 
 .section.section-bean-of-the-week {
+    .grid {
+        display: grid;
+        grid-template-columns: [lef] 1fr [mid] 1fr [rig];
+        grid-template-rows: [top] 1fr [bot];
     
+        &-left {
+            text-align: center;
+            margin-top: 3em;
+        }
+    }
+
+    .link-wrapper {
+        text-align: center;
+
+    }
 }
