@@ -4,8 +4,10 @@
         transform: rotate(-45deg);
     }
 
+    opacity: 0.9;
+
     &:hover {
-        font-weight: bold;
+        opacity: 1;
         text-decoration: underline;
     }
 }
