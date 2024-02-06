@@ -1,5 +1,7 @@
 
 .section.section-hall-of-fame {
+    background-color: #36889d;
+
     .section-headline {
         text-align: center;
     }
@@ -7,7 +9,7 @@
     .grid {
         display: grid;
         grid-template-columns: [lef] 1fr [mid] 1fr [rig];
-        grid-template-rows: [top] 1fr [mid] 1fr [bot];
+        grid-template-rows: [top] auto [mid] auto [bot];
         column-gap: 12px;
         row-gap: 12px;
     }

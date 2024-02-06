@@ -4,11 +4,13 @@
     display: flex;
     flex-direction: column;
     padding: 10px 20% 25px 20%;
+    background-color: white;
     
     &-image {
         align-self: center;
         height: 250px;
         aspect-ratio: 1/1;
+        object-fit: contain;
     }
     
     .link {
