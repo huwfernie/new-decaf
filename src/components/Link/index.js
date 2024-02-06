@@ -6,7 +6,7 @@ function Link({ text, icon, url }) {
         if (icon === "external") {
             return <span className="link-icon external"><img src="/images/link-icon-external.png" alt="external link icon" /></span>
         } else {
-            return <span className="link-icon more">+</span>
+            return <span className="link-icon more">&nbsp;+</span>
         }
     }
 

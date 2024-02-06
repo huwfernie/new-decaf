@@ -5,9 +5,9 @@ function Card() {
 
     return (
         <div className="card">
-            <h3>Card</h3>
-            <img alt="a bag of coffee" />
-            <p>Something Here</p>
+            <h3 className="card-headline">Card</h3>
+            <img alt="a bag of coffee" className="card-image" />
+            <p className="card-text">Something Here</p>
             <Link text="Learn More" url="" icon="" />
         </div>
     );

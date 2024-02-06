@@ -1,4 +1,16 @@
 .card {
-    border: 1px solid red;
+    border: 1px solid grey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20% 25px 20%;
+    
+    &-image {
+        align-self: center;
+    }
+    
+    .link {
+        align-self: center;
+    }
 }
 
