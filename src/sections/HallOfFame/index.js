@@ -5,7 +5,7 @@ import Card from "../../components/Card"
 function HallOfFame() {
   return (
     <Section name="hall-of-fame">
-      <h2>Hall of Fame</h2>
+      <h2 className="section-headline">Hall of Fame</h2>
       <div className="grid">
         <Card />
         <Card />
