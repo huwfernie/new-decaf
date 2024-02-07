@@ -2,18 +2,26 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    padding: 10px 20% 25px 20%;
+    padding: 10px 10% 25px 10%;
     background-color: white;
-    
+
+    &-text {
+        height: -webkit-fill-available;
+    }
+
     &-image {
         align-self: center;
         height: 250px;
         aspect-ratio: 1/1;
         object-fit: contain;
     }
-    
+
+    &-image-canvas {
+        height: 0px;
+        width: 0px;
+    }
+
     .link {
         align-self: center;
     }
 }
-
