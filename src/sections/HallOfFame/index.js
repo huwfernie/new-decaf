@@ -11,7 +11,7 @@ function HallOfFame({ data }) {
           return (
             <Card
               title={item.headline}
-              imageUrl={item.image}
+              image={item.image}
               cardText={item.body}
               linkUrl={item.url}
               key={index}

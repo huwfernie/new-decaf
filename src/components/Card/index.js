@@ -1,8 +1,9 @@
 import { useRef } from 'react';
 import Link from '../Link';
+import Picture from '../Picture';
 import './styles.scss';
 
-function Card({ title, imageUrl, cardText, linkUrl }) {
+function Card({ title, image, cardText, linkUrl }) {
     const canvasRef = useRef(null);
     const imageRef = useRef(null);
     const cardRef = useRef(null);
@@ -35,7 +36,8 @@ function Card({ title, imageUrl, cardText, linkUrl }) {
     return (
         <div ref={cardRef} className="card">
             <h3 className="card-headline">{title}</h3>
-            <img ref={imageRef} alt="a bag of coffee" className="card-image" src={imageUrl} onLoad={handleLoad} />
+            <Picture image={image} altText="a bag of coffee" />
+            <img ref={imageRef} alt="a bag of coffee" className="card-image" src={image.base} onLoad={handleLoad} />
             <canvas ref={canvasRef} className="card-image-canvas"></canvas>
             <p className="card-text">{cardText}</p>
             <Link text="Link" url={linkUrl} icon="external" />
