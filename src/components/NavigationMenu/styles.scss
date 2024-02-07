@@ -1,3 +1,5 @@
+@import "../../styles/viewports.scss";
+
 .navigation {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.85);
@@ -8,5 +10,14 @@
     box-sizing: border-box;
     position: sticky;
     top: 0;
-}
 
+    .viewport-reveal::after {
+        color: red;
+        content: "x-small";
+        @include for-small { content: "small" }
+        @include for-medium { content: "medium" }
+        @include for-large { content: "large" }
+        @include for-xlarge { content: "xlarge" }
+        @include for-xxlarge { content: "xxlarge" }
+    }
+}

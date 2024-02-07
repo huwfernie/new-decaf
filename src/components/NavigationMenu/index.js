@@ -4,6 +4,7 @@ function NavigationMenu() {
     return (
         <nav className="navigation">
             Menu
+            <span className="viewport-reveal"></span>
         </nav>
     );
 }

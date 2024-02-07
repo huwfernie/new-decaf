@@ -1,0 +1,36 @@
+// VIEWPORTS
+// REF Bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
+// Small devices (landscape phones, 576px and up)
+@mixin for-small {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin for-medium {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin for-large {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin for-xlarge {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin for-xxlarge {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
