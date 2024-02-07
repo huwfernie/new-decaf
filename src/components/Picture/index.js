@@ -1,7 +1,6 @@
-
 import './styles.scss';
 
-function Card({ image }) {
+function Picture({ image }) {
 
     return (
         <picture className="picture">
@@ -15,4 +14,4 @@ function Card({ image }) {
     );
 }
 
-export default Card;
+export default Picture;
