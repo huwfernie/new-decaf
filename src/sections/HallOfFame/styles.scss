@@ -1,3 +1,4 @@
+@import "../../styles/viewports";
 
 .section.section-hall-of-fame {
     background-color: #36889d;
@@ -8,9 +9,14 @@
     
     .grid {
         display: grid;
-        grid-template-columns: [lef] 1fr [mid] 1fr [rig];
-        grid-template-rows: [top] auto [mid] auto [bot];
+        grid-template-columns: [lef] 1fr [rig];
+        grid-template-rows: repeat(4, 1fr);
         column-gap: 12px;
         row-gap: 12px;
+        
+        @include for-small {
+            grid-template-columns: [lef] 1fr [mid] 1fr [rig];
+            grid-template-rows: [top] auto [mid] auto [bot];
+        }
     }
 }
