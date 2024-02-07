@@ -1,17 +1,14 @@
-
-import NavigationMenu from '../components/NavigationMenu';
+import NavigationBar from '../components/NavigationBar';
 import Hero from '../sections/Hero';
 import BeanOfTheWeek from '../sections/BeanOfTheWeek';
 import WaysToBrew from '../sections/WaysToBrew';
 import HallOfFame from '../sections/HallOfFame';
 import Footer from '../sections/Footer';
 
-import './App.css';
-
 function App() {
   return (
     <>
-      <NavigationMenu />
+      <NavigationBar />
       <Hero />
       <BeanOfTheWeek />
       <WaysToBrew />
