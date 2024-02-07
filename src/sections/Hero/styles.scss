@@ -1,4 +1,5 @@
 @import "../../styles/images";
+@import "../../styles/viewports";
 
 .section.section-hero {
     height: unset;
@@ -18,13 +19,21 @@
         margin: 0;
     }
 
-    .hero-picture {
-        display: block;
+    .picture {
         align-self: center;
         @include image-for-xsmall(560px, 370px);
-        @include image-for-small(576px, 383px);
+        @include image-for-small(530px, 354px);
         @include image-for-medium(700px, 390px);
         @include image-for-large(700px, 400px);
+
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+        @include for-small {
+            transform: unset;
+            position: unset ;
+            left: unset;
+        }
     }
 
     .hero-tagline {
