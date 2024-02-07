@@ -1,14 +1,14 @@
+@import "../../styles/images";
+
 .section.section-hero {
-    height: 75vh;
+    height: unset;
     min-height: 600px;
+    padding-top: 2em;
 
     .safe-content {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-bottom: 50px;
-        box-sizing: border-box;
     }
 
     .hero-headline {
@@ -18,16 +18,19 @@
         margin: 0;
     }
 
-    .hero-image {
+    .hero-picture {
         display: block;
         align-self: center;
-        // @TODO delete this when real images are in
-        height: 400px;
+        @include image-for-xsmall(560px, 370px);
+        @include image-for-small(576px, 383px);
+        @include image-for-medium(700px, 390px);
+        @include image-for-large(700px, 400px);
     }
 
     .hero-tagline {
         display: block;
         align-self: center;
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 2em;
     }
 }

@@ -10,14 +10,22 @@ const appData = {
     headline: "Decaf Coffee Beans from Lavazza",
     body: "A well-balanced, aromatic blend. Experience an unforgettable, full-bodied flavour. The ideal blend if you want to avoid caffeine without giving up the luxury of Italian coffee.",
     linkUrl: "https://www.lavazza.co.uk/en/coffee-beans/dek",
-    image: "https://www.lavazza.co.uk/content/dam/lavazza-athena/b2c/pdp-pag-prodotto/coffee/hero-product-banner/2-main-asset-coffee/decaffeinato/2744-d-decaffeinato-beans.png"
+    image: {
+      old: "https://www.lavazza.co.uk/content/dam/lavazza-athena/b2c/pdp-pag-prodotto/coffee/hero-product-banner/2-main-asset-coffee/decaffeinato/2744-d-decaffeinato-beans.png",
+      base: "/images/blanc/xsmall.png",
+      versions: ["xsmall", "small", "medium", "large"]
+    }
   },
   waysToBrew: {
     headline: "Bialetti Moka Express",
     body: "This is the original coffee maker, a symbol of Made in Italy quality, which offers the experience of the true Italian ritual of preparing a delicious cup of coffee.",
     learnUrl: "https://en.wikipedia.org/wiki/Moka_pot",
     buyUrl: "https://www.bialetti.com/it_en/moka-express.html",
-    image: "https://www.bialetti.com/media/catalog/product/cache/e8aa104d064dcf81ed9afb1c9c6893f4/m/o/moka_express.png"
+    image: {
+      old: "https://www.bialetti.com/media/catalog/product/cache/e8aa104d064dcf81ed9afb1c9c6893f4/m/o/moka_express.png",
+      base: "/images/blanc/xsmall.png",
+      versions: ["xsmall", "small", "medium", "large"]
+    }
   },
   hallOfFame: [
     {

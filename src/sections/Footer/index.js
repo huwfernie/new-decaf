@@ -20,8 +20,11 @@ function Footer() {
           </ul>
         </div>
       </div>
+      <ul className="legal">
+        <li>Hero Image: legal note</li>
+      </ul>
     </Section>
-  ); 
+  );
 }
 
 export default Footer;

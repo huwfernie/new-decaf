@@ -1,4 +1,5 @@
 @import "../../styles/viewports";
+@import "../../styles/images";
 
 .section.section-ways-to-brew {
     background-color: #f0eded;
@@ -22,10 +23,12 @@
         &-left {
             overflow: hidden;
             
-            .image {
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
+            .picture {
+                @include image-for-xsmall(252px, 350px);
+                @include image-for-small(320px, 400px);
+                @include image-for-medium(300px, 300px);
+                @include image-for-large(420px, 420px);
+                @include image-for-xlarge(460px, 460px);
             }
         }
     }

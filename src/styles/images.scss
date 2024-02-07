@@ -1,0 +1,50 @@
+// Images for viewports
+// REF Bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
+// Small devices (landscape phones, 576px and up)
+
+@import "./viewports";
+
+
+@mixin image-for-xsmall($x, $y) {
+    width: $x;
+    height: $y;
+}
+
+@mixin image-for-small($x, $y) {
+    @include for-small {
+        width: $x;
+        height: $y;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin image-for-medium($x, $y) {
+    @include for-medium {
+        width: $x;
+        height: $y;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin image-for-large($x, $y) {
+    @include for-large {
+        width: $x;
+        height: $y;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin image-for-xlarge($x, $y) {
+    @include for-xlarge {
+        width: $x;
+        height: $y;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin image-for-xxlarge($x, $y) {
+    @include for-xxlarge {
+        width: $x;
+        height: $y;
+    }
+}

@@ -1,4 +1,5 @@
 @import "../../styles/viewports";
+@import "../../styles/images";
 
 .card {
     border-radius: 15px;
@@ -18,9 +19,11 @@
     
     &-image {
         align-self: center;
-        height: 250px;
-        aspect-ratio: 1/1;
-        object-fit: contain;
+        @include image-for-xsmall(250px, 250px);
+        @include image-for-medium(260px, 260px);
+        @include image-for-large(300px, 300px);
+        @include image-for-xlarge(310px, 310px);
+        @include image-for-xlarge(320px, 320px);
     }
     
     &-image-canvas {
