@@ -5,14 +5,56 @@ import WaysToBrew from '../sections/WaysToBrew';
 import HallOfFame from '../sections/HallOfFame';
 import Footer from '../sections/Footer';
 
+const appData = {
+  beanOfTheWeek: {
+    headline: "Decaf Coffee Beans from Lavazza",
+    body: "A well-balanced, aromatic blend. Experience an unforgettable, full-bodied flavour. The ideal blend if you want to avoid caffeine without giving up the luxury of Italian coffee.",
+    linkUrl: "https://www.lavazza.co.uk/en/coffee-beans/dek",
+    image: "https://www.lavazza.co.uk/content/dam/lavazza-athena/b2c/pdp-pag-prodotto/coffee/hero-product-banner/2-main-asset-coffee/decaffeinato/2744-d-decaffeinato-beans.png"
+  },
+  waysToBrew: {
+    headline: "Bialetti Moka Express",
+    body: "This is the original coffee maker, a symbol of Made in Italy quality, which offers the experience of the true Italian ritual of preparing a delicious cup of coffee.",
+    learnUrl: "https://en.wikipedia.org/wiki/Moka_pot",
+    buyUrl: "https://www.bialetti.com/it_en/moka-express.html",
+    image: "https://www.bialetti.com/media/catalog/product/cache/e8aa104d064dcf81ed9afb1c9c6893f4/m/o/moka_express.png"
+  },
+  hallOfFame: [
+    {
+      headline: "Bialetti Moka Deka Decaffeinated Ground Coffee",
+      body: "Bialetti's Moka Deka decaffeinated ground coffee has a pleasant aroma and a strong structure, giving you the flavour and pleasure of a real espresso. The medium roasting gives this coffee delicious aromatic notes of cereals and toasted bread. It's perfectly suited to Bialetti's Moka coffee maker and is traditionally roasted in Italy.",
+      url: "https://www.johnlewis.com/bialetti-moka-deka-decaffeinated-ground-coffee-250g/p5112688",
+      image: "/images/external/bialetti_decaf.jpeg"
+    },
+    {
+      headline: "Six 'til Midnight Swiss Water Decaf (Organic)",
+      body: "It's not often that you get a decaf that can fool the coffee geek in your life - but this one might just do it. It's rich, full bodied and has some distinct notes of dark fruits. It produces a rich crema as an espresso and is a real all rounder.",
+      url: "https://katacoffeeroasters.co.uk/products/copy-of-peru-david-guevara-armijos",
+      image: "/images/external/six_till_midnight_decaf.webp"
+    },
+    {
+      headline: "Decaf Coffee",
+      body: "This decaf coffee is packed with flavour and smoothness, with notes of maple syrup, green grape and dark chocolate caramel. This coffee is made using the chemical-free C02 water method with beans from Peru. We love this delicious coffee for the flavour without the caffeine.",
+      url: "https://volcanocoffeeworks.com/products/decaf-coffee",
+      image: "/images/external/volcano_decaf.webp"
+    },
+    {
+      headline: "GRIND",
+      body: "This decaf is the best we've ever had. Processed using the Natural EA method, meaning its good for the environment whilst preserving the coffee's original flavours.",
+      url: "https://grind.co.uk/products/taster-pack-coffee",
+      image: "/images/external/grind_decaf.webp"
+    }
+  ]
+}
+
 function App() {
   return (
     <>
       <NavigationBar />
       <Hero />
-      <BeanOfTheWeek />
-      <WaysToBrew />
-      <HallOfFame />
+      <BeanOfTheWeek data={appData.beanOfTheWeek} />
+      <WaysToBrew data={appData.waysToBrew} />
+      <HallOfFame data={appData.hallOfFame} />
       <Footer />
     </>
   );
