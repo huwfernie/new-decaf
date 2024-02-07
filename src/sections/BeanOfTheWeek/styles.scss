@@ -1,25 +1,32 @@
+@import "../../styles/viewports";
 
 .section.section-bean-of-the-week {
     background-color: #75add1;
 
     .grid {
         display: grid;
-        grid-template-columns: [lef] 1fr [mid] 1fr [rig];
-        grid-template-rows: [top] 1fr [bot];
+        grid-template-columns: [lef] 1fr [rig];
+        grid-template-rows: [top] auto [mid] auto [bot];
         column-gap: 20px;
-        margin-top: 39px;
-    
+
+        @include for-medium {
+            grid-template-columns: [lef] 1fr [mid] 1fr [rig];
+            grid-template-rows: [top] 1fr [bot];
+        }
+        
         &-left {
             text-align: center;
             margin-top: 3em;
         }
-
+        
         &-right {
             overflow: hidden;
-
-        .image {
-            height: 370px;
-        }
+            
+            .image {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
         }
     }
 

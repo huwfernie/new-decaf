@@ -1,16 +1,32 @@
+@import "../../styles/viewports";
 
 .section.section-ways-to-brew {
     background-color: #f0eded;
     .grid {
         display: grid;
-        grid-template-columns: [lef] 1fr [mid] 1fr [rig];
-        grid-template-rows: [top] 1fr [bot];
-        margin-top: 39px;
+        grid-template-columns: [lef] 1fr [rig];
+        grid-template-rows: [top] auto [mid] auto [bot];
         column-gap: 20px;
+        margin-top: 39px;
+
+        @include for-medium {
+            grid-template-columns: [lef] 1fr [mid] 1fr [rig];
+            grid-template-rows: [top] 1fr [bot];
+        }
     
         &-right {
             text-align: center;
             margin-top: 2em;
+        }
+
+        &-left {
+            overflow: hidden;
+            
+            .image {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
         }
     }
 

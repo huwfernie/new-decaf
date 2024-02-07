@@ -7,7 +7,7 @@ function WaysToBrew() {
     <Section name="ways-to-brew">
       <div className="grid">
         <div className="grid-left grid-50">
-          <img src="https://www.bialetti.com/media/catalog/product/cache/e8aa104d064dcf81ed9afb1c9c6893f4/m/o/moka_express.png" className="App-logo" alt="bag of coffee beans" />
+          <img src="https://www.bialetti.com/media/catalog/product/cache/e8aa104d064dcf81ed9afb1c9c6893f4/m/o/moka_express.png" className="image" alt="bag of coffee beans" />
         </div>
         <div className="grid-right grid-50">
           <h2>Ways to Brew</h2>
