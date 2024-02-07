@@ -1,4 +1,12 @@
 .navigation {
-
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 1em;
+    border-bottom: 0.5px solid whitesmoke;
+    text-align: right;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
 }
 
