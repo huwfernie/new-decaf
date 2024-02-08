@@ -4,8 +4,8 @@ import Picture from '../../components/Picture';
 
 function Hero() {
   const heroImage = {
-    base: "/images/hero/untitled.png",
-    versions: ["xsmall", "small", "medium", "large"]
+    base: "/images/hero/xsmall.png",
+    versions: ["xsmall", "small", "medium", "large", "xlarge"]
   }
   return (
     <Section name="hero">
