@@ -1,9 +1,9 @@
 import './styles.scss';
 
-function NavigationMenu() {
+function NavigationMenu({ setShowMenu }) {
     return (
         <nav className="navigation">
-            Menu
+            <span onClick={() => setShowMenu((current) => !current)}>Menu</span>
             <span className="viewport-reveal"></span>
         </nav>
     );

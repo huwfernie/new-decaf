@@ -1,0 +1,57 @@
+
+.section.section-menu {
+    height: 100vh;
+    overflow: scroll;
+    width: 75vw;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: whitesmoke; 
+    transition-property: transform;
+    transform: translateX(100%);
+    transition-delay: 0s;
+    text-align: center;
+    font-weight: bold;
+    
+    &.hidden {
+        transition-duration: 0.5s;
+        transform: translateX(100%);
+        right: 0;
+    }
+    
+    &.visible {
+        transition-duration: 0.5s;
+        transform: translateX(0);
+    }
+
+    .menu-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-item {
+        margin: 1em;
+        font-weight: bold;
+        font-size: 1.5em;
+        cursor: pointer;
+        display: block;
+        width: fit-content;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+}

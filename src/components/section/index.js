@@ -1,7 +1,8 @@
 import './styles.scss';
 
-function Section({ children, name }) {
+function Section({ children, name, onClick = null }) {
     const className = "section section-" + name;
+    const id = "section-" + name;
 
     if (name === "footer") {
         return (
@@ -14,7 +15,7 @@ function Section({ children, name }) {
     }
 
     return (
-        <section className={className} >
+        <section id={id} className={className} onClick={onClick}>
             <div className="safe-content">
                 {children}
             </div>

@@ -1,3 +1,4 @@
+import { useEffect, useState, useCallback } from 'react';
 import NavigationBar from '../components/NavigationBar';
 import Hero from '../sections/Hero';
 import BeanOfTheWeek from '../sections/BeanOfTheWeek';
@@ -5,6 +6,7 @@ import Manifesto from '../sections/Manifesto';
 import WaysToBrew from '../sections/WaysToBrew';
 import HallOfFame from '../sections/HallOfFame';
 import Footer from '../sections/Footer';
+import Menu from '../sections/Menu';
 
 const appData = {
   beanOfTheWeek: {
@@ -73,15 +75,33 @@ const appData = {
 }
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  // close menu on Escape key
+  const onKeyUp = useCallback((event) => {
+    if (event.keyCode === 27) {
+      setShowMenu(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (showMenu) {
+      window.addEventListener("keyup", onKeyUp);
+    } else {
+      window.removeEventListener("keyup", onKeyUp);
+    }
+  }, [showMenu, onKeyUp])
+
   return (
     <>
-      <NavigationBar />
+      <NavigationBar setShowMenu={setShowMenu} />
       <Hero />
       <Manifesto />
       <BeanOfTheWeek data={appData.beanOfTheWeek} />
       <WaysToBrew data={appData.waysToBrew} />
       <HallOfFame data={appData.hallOfFame} />
       <Footer data={appData} />
+      <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
     </>
   );
 }
