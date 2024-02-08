@@ -21,7 +21,7 @@ function Footer() {
         </div>
       </div>
       <ul className="legal">
-        <li>Hero Image: legal note</li>
+        <li>Hero Image: https://www.illy.com/en-ww/coffee/decaffeinated-coffee</li>
       </ul>
     </Section>
   );

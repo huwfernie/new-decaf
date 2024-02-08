@@ -1,5 +1,8 @@
 // VIEWPORTS
 // REF Bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
+@mixin for-xsmall {
+    @content;
+}
 // Small devices (landscape phones, 576px and up)
 @mixin for-small {
     @media (min-width: 576px) {

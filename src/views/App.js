@@ -12,7 +12,7 @@ const appData = {
     linkUrl: "https://www.lavazza.co.uk/en/coffee-beans/dek",
     image: {
       old: "https://www.lavazza.co.uk/content/dam/lavazza-athena/b2c/pdp-pag-prodotto/coffee/hero-product-banner/2-main-asset-coffee/decaffeinato/2744-d-decaffeinato-beans.png",
-      base: "/images/blanc/xsmall.png",
+      base: "/images/bean_of_the_week/xsmall.png",
       versions: ["xsmall", "small", "medium", "large"]
     }
   },
@@ -23,7 +23,7 @@ const appData = {
     buyUrl: "https://www.bialetti.com/it_en/moka-express.html",
     image: {
       old: "https://www.bialetti.com/media/catalog/product/cache/e8aa104d064dcf81ed9afb1c9c6893f4/m/o/moka_express.png",
-      base: "/images/blanc/xsmall.png",
+      base: "/images/ways_to_brew/xsmall.png",
       versions: ["xsmall", "small", "medium", "large"]
     }
   },
