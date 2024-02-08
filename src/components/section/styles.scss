@@ -11,23 +11,24 @@
     justify-content: center;
 
     .safe-content {
+        // x-small, fluid with 5% margin
         margin: 0 5%;
         width: 100%;
         @include for-small {
             margin: 0 4%;
-            max-width: 700px;
+            max-width: 528px;
         }
         @include for-medium {
-            max-width: 900px;
+            max-width: 706px;
         }
         @include for-large {
-            max-width: 1000px;
+            max-width: 912px;
         }
         @include for-xlarge {
             max-width: 1100px;
         }
         @include for-xxlarge {
-            max-width: 1200px;
+            max-width: 1100px;
         }
     }
 
