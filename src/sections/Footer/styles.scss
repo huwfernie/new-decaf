@@ -49,8 +49,10 @@
             color: grey;
         }
 
-        li {
+        .legal-item {
             margin: 0;
+            display: inline;
+            word-break: break-all;
         }
     }
 }

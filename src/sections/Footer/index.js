@@ -21,13 +21,13 @@ function Footer() {
         </div>
       </div>
       <ul className="legal">
-        <li>Hero Image: https://www.illy.com/en-ww/coffee/decaffeinated-coffee</li>
-        <li>Bean of the Week Image: https://www.lavazza.co.uk/en/coffee-beans/dek</li>
-        <li>Ways to Brew Image: </li>
-        <li>Hall of fame 1: </li>
-        <li>Hall of fame 2: </li>
-        <li>Hall of fame 3: </li>
-        <li>Hall of fame 4: </li>
+        <li className="legal-item"><strong>Hero Image:</strong> https://www.illy.com/en-ww/coffee/decaffeinated-coffee</li>
+        <li className="legal-item"><strong>Bean of the Week Image:</strong> https://www.lavazza.co.uk/en/coffee-beans/dek</li>
+        <li className="legal-item"><strong>Ways to Brew Image:</strong> </li>
+        <li className="legal-item"><strong>Hall of fame 1:</strong> </li>
+        <li className="legal-item"><strong>Hall of fame 2:</strong> </li>
+        <li className="legal-item"><strong>Hall of fame 3:</strong> </li>
+        <li className="legal-item"><strong>Hall of fame 4:</strong> </li>
       </ul>
     </Section>
   );
