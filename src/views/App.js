@@ -1,6 +1,7 @@
 import NavigationBar from '../components/NavigationBar';
 import Hero from '../sections/Hero';
 import BeanOfTheWeek from '../sections/BeanOfTheWeek';
+import Manifesto from '../sections/Manifesto';
 import WaysToBrew from '../sections/WaysToBrew';
 import HallOfFame from '../sections/HallOfFame';
 import Footer from '../sections/Footer';
@@ -76,6 +77,7 @@ function App() {
     <>
       <NavigationBar />
       <Hero />
+      <Manifesto />
       <BeanOfTheWeek data={appData.beanOfTheWeek} />
       <WaysToBrew data={appData.waysToBrew} />
       <HallOfFame data={appData.hallOfFame} />

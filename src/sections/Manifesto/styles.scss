@@ -1,0 +1,16 @@
+@import "../../styles/viewports";
+
+.section.section-manifesto {
+    .safe-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.5em;   
+        
+        @include for-small {
+            font-size: 2em;
+        }
+    }
+}
