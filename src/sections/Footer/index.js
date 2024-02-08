@@ -7,7 +7,7 @@ function Footer({ data }) {
     <Section name="footer">
       <div className="grid">
         <div className="grid-left grid-50">
-          <img src="/temp/footer-logo.png" className="footer-logo" alt="bag of coffee beans" />
+          <img src="/images/footer/footer-logo.png" className="footer-logo" alt="bag of coffee beans" />
         </div>
         <div className="grid-right grid-50">
           <ul>
