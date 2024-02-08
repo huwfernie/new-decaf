@@ -11,13 +11,26 @@
     position: sticky;
     top: 0;
 
-    .viewport-reveal::after {
-        color: red;
-        content: "x-small";
-        @include for-small { content: "small" }
-        @include for-medium { content: "medium" }
-        @include for-large { content: "large" }
-        @include for-xlarge { content: "xlarge" }
-        @include for-xxlarge { content: "xxlarge" }
+    .nav-button {
+        margin: 0;
+        border: 0;
+        background-color: rgba(0,0,0,0);
+        font-size: inherit;
+        font-weight: inherit;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
+
+    // .viewport-reveal::after {
+    //     color: red;
+    //     @include for-xsmall { content: "x-small" }
+    //     @include for-small { content: "small" }
+    //     @include for-medium { content: "medium" }
+    //     @include for-large { content: "large" }
+    //     @include for-xlarge { content: "xlarge" }
+    //     @include for-xxlarge { content: "xxlarge" }
+    // }
 }
