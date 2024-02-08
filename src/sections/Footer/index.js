@@ -22,6 +22,12 @@ function Footer() {
       </div>
       <ul className="legal">
         <li>Hero Image: https://www.illy.com/en-ww/coffee/decaffeinated-coffee</li>
+        <li>Bean of the Week Image: https://www.lavazza.co.uk/en/coffee-beans/dek</li>
+        <li>Ways to Brew Image: </li>
+        <li>Hall of fame 1: </li>
+        <li>Hall of fame 2: </li>
+        <li>Hall of fame 3: </li>
+        <li>Hall of fame 4: </li>
       </ul>
     </Section>
   );
