@@ -34,8 +34,8 @@ const appData = {
       url: "https://www.johnlewis.com/bialetti-moka-deka-decaffeinated-ground-coffee-250g/p5112688",
       image: {
         old:  "/images/external/bialetti_decaf.jpeg",
-        base: "/images/blanc/xsmall.png",
-        versions: ["xsmall", "small", "medium", "large"]
+        base: "/images/hall_of_fame/bialetti_deka_xsmall.png",
+        versions: ["xsmall", "small", "medium", "large", "xlarge"]
       }
     },
     {
@@ -44,8 +44,8 @@ const appData = {
       url: "https://katacoffeeroasters.co.uk/products/copy-of-peru-david-guevara-armijos",
       image: {
         old:  "/images/external/six_till_midnight_decaf.webp",
-        base: "/images/blanc/xsmall.png",
-        versions: ["xsmall", "small", "medium", "large"]
+        base: "/images/hall_of_fame/kata_xsmall.png",
+        versions: ["xsmall", "small", "medium", "large", "xlarge"]
       }
     },
     {
@@ -54,8 +54,8 @@ const appData = {
       url: "https://volcanocoffeeworks.com/products/decaf-coffee",
       image: {
         old:  "/images/external/volcano_decaf.webp",
-        base: "/images/blanc/xsmall.png",
-        versions: ["xsmall", "small", "medium", "large"]
+        base: "/images/hall_of_fame/volcano_xsmall.png",
+        versions: ["xsmall", "small", "medium", "large", "xlarge"]
       }
     },
     {
@@ -64,8 +64,8 @@ const appData = {
       url: "https://grind.co.uk/products/taster-pack-coffee",
       image: {
         old:  "/images/external/grind_decaf.webp",
-        base: "/images/blanc/xsmall.png",
-        versions: ["xsmall", "small", "medium", "large"]
+        base: "/images/hall_of_fame/grind_xsmall.png",
+        versions: ["xsmall", "small", "medium", "large", "xlarge"]
       }
     }
   ]

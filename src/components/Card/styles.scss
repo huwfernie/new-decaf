@@ -19,10 +19,10 @@
     
     .picture {
         align-self: center;
-        @include image-for-xsmall(250px, 250px);
-        @include image-for-medium(260px, 260px);
-        @include image-for-large(300px, 300px);
-        @include image-for-xlarge(310px, 310px);
+        @include image-for-xsmall(216px, 216px);
+        @include image-for-small(200px, 200px);
+        @include image-for-medium(280px, 280px);
+        @include image-for-large(310px, 310px);
         @include image-for-xlarge(320px, 320px);
     }
     
