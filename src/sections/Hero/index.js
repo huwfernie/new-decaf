@@ -11,7 +11,9 @@ function Hero() {
     <Section name="hero">
       <h1 className="hero-headline">New Decaf</h1>
       <p className="hero-tagline" >Brew Something New</p>
-      <Picture image={heroImage} altText="mug of coffee" />
+      <div className="picture-wrapper">
+        <Picture image={heroImage} altText="mug of coffee" />
+      </div>
     </Section>
   );
 }
