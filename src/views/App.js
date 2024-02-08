@@ -79,7 +79,7 @@ function App() {
       <BeanOfTheWeek data={appData.beanOfTheWeek} />
       <WaysToBrew data={appData.waysToBrew} />
       <HallOfFame data={appData.hallOfFame} />
-      <Footer />
+      <Footer data={appData} />
     </>
   );
 }

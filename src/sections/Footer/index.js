@@ -2,7 +2,7 @@ import './styles.scss';
 import Section from '../../components/section';
 import Link from '../../components/Link';
 
-function Footer() {
+function Footer({ data }) {
   return (
     <Section name="footer">
       <div className="grid">
@@ -21,13 +21,13 @@ function Footer() {
         </div>
       </div>
       <ul className="legal">
-        <li className="legal-item"><strong>Hero Image:</strong> https://www.illy.com/en-ww/coffee/decaffeinated-coffee</li>
-        <li className="legal-item"><strong>Bean of the Week Image:</strong> https://www.lavazza.co.uk/en/coffee-beans/dek</li>
-        <li className="legal-item"><strong>Ways to Brew Image:</strong> </li>
-        <li className="legal-item"><strong>Hall of fame 1:</strong> </li>
-        <li className="legal-item"><strong>Hall of fame 2:</strong> </li>
-        <li className="legal-item"><strong>Hall of fame 3:</strong> </li>
-        <li className="legal-item"><strong>Hall of fame 4:</strong> </li>
+        <li className="legal-item"><strong>Hero Image:</strong>https://www.illy.com/en-ww/coffee/decaffeinated-coffee</li>
+        <li className="legal-item"><strong>Bean of the Week Image:</strong>{data.beanOfTheWeek.linkUrl}</li>
+        <li className="legal-item"><strong>Ways to Brew Image:</strong>{data.waysToBrew.buyUrl}</li>
+        <li className="legal-item"><strong>Hall of fame 1:</strong>{data.hallOfFame[0].url}</li>
+        <li className="legal-item"><strong>Hall of fame 2:</strong>{data.hallOfFame[1].url}</li>
+        <li className="legal-item"><strong>Hall of fame 3:</strong>{data.hallOfFame[2].url}</li>
+        <li className="legal-item"><strong>Hall of fame 4:</strong>{data.hallOfFame[3].url}</li>
       </ul>
     </Section>
   );
