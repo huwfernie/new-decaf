@@ -4,7 +4,7 @@ import Picture from '../../components/Picture';
 
 function Hero() {
   const heroImage = {
-    base: "/images/blanc/xsmall.png",
+    base: "/images/hero/untitled.png",
     versions: ["xsmall", "small", "medium", "large"]
   }
   return (
