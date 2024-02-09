@@ -28,6 +28,7 @@ function Footer({ data }) {
         <li className="legal-item"><strong>Hall of fame 2:</strong>{data.hallOfFame[1].url}</li>
         <li className="legal-item"><strong>Hall of fame 3:</strong>{data.hallOfFame[2].url}</li>
         <li className="legal-item"><strong>Hall of fame 4:</strong>{data.hallOfFame[3].url}</li>
+        <li className="legal-item"><strong>Favicon:</strong><a href="https://www.flaticon.com/free-icons/coffee" title="coffee icons">Coffee icons created by Freepik - Flaticon</a></li>
       </ul>
     </Section>
   );
