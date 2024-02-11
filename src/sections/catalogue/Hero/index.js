@@ -1,6 +1,6 @@
 import './styles.scss';
-import Section from '../../components/section';
-import Picture from '../../components/Picture';
+import Section from '../../../components/section';
+import Picture from '../../../components/Picture';
 
 function Hero() {
   const heroImage = {

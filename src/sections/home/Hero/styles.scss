@@ -1,0 +1,58 @@
+@import "../../../styles/images";
+@import "../../../styles/viewports";
+
+.section.section-hero {
+    height: unset;
+    min-height: 600px;
+    @include for-xsmall{ min-height: 294px };
+    @include for-small{ min-height: 394px };
+    @include for-medium{ min-height: 509px };
+    @include for-large{ min-height: 616px };
+    @include for-xlarge{ min-height: 740px };
+    box-sizing: border-box;
+    padding-top: 2em;
+    color: whitesmoke;
+
+    .safe-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-headline {
+        display: inline-block;
+        text-align: center;
+        font-size: 3em;
+        @include for-medium{ font-size: 4em };
+        margin: 0;
+    }
+
+    .picture-wrapper {
+        max-width: 100vw;
+        overflow: hidden;
+        transform: translateX(-50%);
+        position: absolute;
+        top: 52px;
+        left: 50%;
+        z-index: -1;
+    }
+
+    .picture {
+        @include image-for-xsmall(572px, 294px);
+        @include image-for-small(767px, 394px);
+        @include image-for-medium(991px, 509px);
+        @include image-for-large(1199px, 616px);
+        @include image-for-xlarge(1440px, 740px);
+
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+    }
+
+    .hero-tagline {
+        display: block;
+        align-self: center;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+}

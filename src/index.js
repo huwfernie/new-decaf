@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import App from './views/App';
+import Home from './views/Home';
 // import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -11,7 +11,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/catalogue",

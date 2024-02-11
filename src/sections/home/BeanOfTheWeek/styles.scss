@@ -1,26 +1,26 @@
-@import "../../styles/viewports";
-@import "../../styles/images";
+@import "../../../styles/viewports";
+@import "../../../styles/images";
 
-.section.section-ways-to-brew {
-    background-color: #f0eded;
+.section.section-bean-of-the-week {
+    background-color: #75add1;
+
     .grid {
         display: grid;
         grid-template-columns: [lef] 1fr [rig];
         grid-template-rows: [top] auto [mid] auto [bot];
         column-gap: 20px;
-        margin-top: 39px;
 
         @include for-medium {
             grid-template-columns: [lef] 1fr [mid] 1fr [rig];
             grid-template-rows: [top] 1fr [bot];
         }
-    
-        &-right {
-            text-align: center;
-            margin-top: 2em;
-        }
-
+        
         &-left {
+            text-align: center;
+            margin-top: 3em;
+        }
+        
+        &-right {
             overflow: hidden;
             
             .picture {
@@ -39,6 +39,7 @@
         .link {
             margin: 10px;
             display: inline-block;
+            color: #fafafa;
         }
     }
 }

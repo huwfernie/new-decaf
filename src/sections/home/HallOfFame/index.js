@@ -1,6 +1,6 @@
 import './styles.scss';
-import Section from '../../components/section';
-import Card from "../../components/Card"
+import Section from '../../../components/section';
+import Card from "../../../components/Card"
 
 function HallOfFame({ data }) {
   return (

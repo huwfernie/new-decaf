@@ -1,5 +1,5 @@
 import './styles.scss';
-import Section from '../../components/section';
+import Section from '../../../components/section';
 
 function Manifesto() {
   return (

@@ -1,12 +1,12 @@
 import { useEffect, useState, useCallback } from 'react';
 import NavigationBar from '../components/NavigationBar';
-import Hero from '../sections/Hero';
-import BeanOfTheWeek from '../sections/BeanOfTheWeek';
-import Manifesto from '../sections/Manifesto';
-import WaysToBrew from '../sections/WaysToBrew';
-import HallOfFame from '../sections/HallOfFame';
-import Footer from '../sections/Footer';
-import Menu from '../sections/Menu';
+import Hero from '../sections/home/Hero';
+import BeanOfTheWeek from '../sections/home/BeanOfTheWeek';
+import Manifesto from '../sections/home/Manifesto';
+import WaysToBrew from '../sections/home/WaysToBrew';
+import HallOfFame from '../sections/home/HallOfFame';
+import Footer from '../sections/shared/Footer';
+import Menu from '../sections/home/Menu';
 
 const appData = {
   beanOfTheWeek: {

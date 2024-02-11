@@ -1,6 +1,6 @@
 import './styles.scss';
-import Section from '../../components/section';
-import Link from '../../components/Link';
+import Section from '../../../components/section';
+import Link from '../../../components/Link';
 
 function Footer({ data }) {
   return (

@@ -1,7 +1,7 @@
 import './styles.scss';
-import Section from '../../components/section';
-import Link from '../../components/Link';
-import Picture from '../../components/Picture';
+import Section from '../../../components/section';
+import Link from '../../../components/Link';
+import Picture from '../../../components/Picture';
 
 function BeanOfTheWeek({ data }) {
   const { headline, body, linkUrl, image } = data;
