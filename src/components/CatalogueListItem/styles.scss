@@ -1,0 +1,17 @@
+@import "../../styles/viewports";
+@import "../../styles/images";
+
+.catalogue-list-item {
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin-bottom: 3em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .picture {
+        width: 100px;
+        height: 100px;
+    }
+}
