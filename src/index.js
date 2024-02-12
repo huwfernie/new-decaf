@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Home from './views/Home';
 // import reportWebVitals from './reportWebVitals';
+
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+if (process.env.NODE_ENV === "development") {
+  console.dir(document.title);
+  document.title = "l'host - " + document.title;
+} 
 
 const router = createBrowserRouter([
   {
