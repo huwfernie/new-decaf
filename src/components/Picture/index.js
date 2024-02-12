@@ -1,5 +1,11 @@
 import './styles.scss';
 
+// type Image = {
+//     altText: String;
+//     base: string;
+//     versions: ["xxlarge" | "xlarge" | "large" | "medium" | "small" | "xsmall"];
+// }
+
 function Picture({ image }) {
 
     return (
