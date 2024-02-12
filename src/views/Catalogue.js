@@ -4,7 +4,7 @@ import Hero from '../sections/catalogue/Hero';
 import Filters from '../sections/catalogue/Filters';
 import CatalogueList from '../sections/catalogue/CatalogueList';
 import Footer from '../sections/shared/Footer';
-import Menu from '../sections/home/Menu';
+import Menu from '../sections/shared/Menu';
 
 const pageData = {
 

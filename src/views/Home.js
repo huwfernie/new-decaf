@@ -6,7 +6,8 @@ import Manifesto from '../sections/home/Manifesto';
 import WaysToBrew from '../sections/home/WaysToBrew';
 import HallOfFame from '../sections/home/HallOfFame';
 import Footer from '../sections/shared/Footer';
-import Menu from '../sections/home/Menu';
+import Menu from '../sections/shared/Menu';
+import { useHashScroll } from "../hooks/useHashScroll";
 
 const appData = {
   beanOfTheWeek: {
@@ -76,6 +77,7 @@ const appData = {
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
+  useHashScroll();
 
   // close menu on Escape key
   const onKeyUp = useCallback((event) => {
