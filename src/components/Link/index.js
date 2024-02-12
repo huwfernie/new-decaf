@@ -1,5 +1,5 @@
 import './styles.scss';
-
+import { Link as RouterLink } from 'react-router-dom';
 function Link({ text, icon, url }) {
 
     function Icon(){
@@ -13,7 +13,7 @@ function Link({ text, icon, url }) {
     }
 
     return (
-        <a className="link" href={url} >{text}<Icon /></a>
+        <RouterLink className="link" to={url} >{text}<Icon /></RouterLink>
     );
 }
 
