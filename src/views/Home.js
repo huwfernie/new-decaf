@@ -1,4 +1,3 @@
-import { useEffect, useState, useCallback } from 'react';
 import NavigationBar from '../components/NavigationBar';
 import Hero from '../sections/home/Hero';
 import BeanOfTheWeek from '../sections/home/BeanOfTheWeek';
@@ -8,6 +7,7 @@ import HallOfFame from '../sections/home/HallOfFame';
 import Footer from '../sections/shared/Footer';
 import Menu from '../sections/shared/Menu';
 import { useHashScroll } from "../hooks/useHashScroll";
+import { useMenu } from "../hooks/useMenu";
 
 const appData = {
   beanOfTheWeek: {
@@ -76,27 +76,12 @@ const appData = {
 }
 
 function App() {
-  const [showMenu, setShowMenu] = useState(false);
   useHashScroll();
-
-  // close menu on Escape key
-  const onKeyUp = useCallback((event) => {
-    if (event.keyCode === 27) {
-      setShowMenu(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (showMenu) {
-      window.addEventListener("keyup", onKeyUp);
-    } else {
-      window.removeEventListener("keyup", onKeyUp);
-    }
-  }, [showMenu, onKeyUp])
+  const menu = useMenu();
 
   return (
     <div className="page-home">
-      <NavigationBar setShowMenu={setShowMenu} />
+      <NavigationBar menu={menu} />
       <Hero />
       <Manifesto />
       <BeanOfTheWeek data={appData.beanOfTheWeek} />
@@ -112,7 +97,7 @@ function App() {
         <li className="legal-item"><strong>Hall of fame 4:</strong>{appData.hallOfFame[3].url}</li>
         <li className="legal-item"><strong>Favicon:</strong><a href="https://www.flaticon.com/free-icons/coffee" title="coffee icons">Coffee icons created by Freepik - Flaticon</a></li>
       </Footer>
-      <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
+      <Menu menu={menu} />
     </div>
   );
 }

@@ -2,10 +2,10 @@ import './styles.scss';
 import Section from '../../../components/section';
 import { Link } from "react-router-dom";
 
-function Menu({ showMenu, setShowMenu }) {
-  const className = showMenu ? "menu visible" : "menu hidden";
+function Menu({ menu }) {
+  const className = menu.isOpen ? "menu visible" : "menu hidden";
   return (
-    <Section name={className} onClick={() => setShowMenu(false)}>
+    <Section name={className} onClick={menu.close}>
       <p>Menu</p>
       <ul className="menu-list">
         <li className="list-item"><Link to="/#section-bean-of-the-week">Bean of the Week link</Link></li>
