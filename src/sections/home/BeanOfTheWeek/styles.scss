@@ -1,45 +1,47 @@
 @import "../../../styles/viewports";
 @import "../../../styles/images";
 
-.section.section-bean-of-the-week {
-    background-color: #75add1;
+.page-home {
+    .section.section-bean-of-the-week {
+        background-color: #75add1;
 
-    .grid {
-        display: grid;
-        grid-template-columns: [lef] 1fr [rig];
-        grid-template-rows: [top] auto [mid] auto [bot];
-        column-gap: 20px;
+        .grid {
+            display: grid;
+            grid-template-columns: [lef] 1fr [rig];
+            grid-template-rows: [top] auto [mid] auto [bot];
+            column-gap: 20px;
 
-        @include for-medium {
-            grid-template-columns: [lef] 1fr [mid] 1fr [rig];
-            grid-template-rows: [top] 1fr [bot];
-        }
-        
-        &-left {
-            text-align: center;
-            margin-top: 3em;
-        }
-        
-        &-right {
-            overflow: hidden;
+            @include for-medium {
+                grid-template-columns: [lef] 1fr [mid] 1fr [rig];
+                grid-template-rows: [top] 1fr [bot];
+            }
             
-            .picture {
-                @include image-for-xsmall(252px, 350px);
-                @include image-for-small(320px, 400px);
-                @include image-for-medium(300px, 300px);
-                @include image-for-large(420px, 420px);
-                @include image-for-xlarge(460px, 460px);
+            &-left {
+                text-align: center;
+                margin-top: 3em;
+            }
+            
+            &-right {
+                overflow: hidden;
+                
+                .picture {
+                    @include image-for-xsmall(252px, 350px);
+                    @include image-for-small(320px, 400px);
+                    @include image-for-medium(300px, 300px);
+                    @include image-for-large(420px, 420px);
+                    @include image-for-xlarge(460px, 460px);
+                }
             }
         }
-    }
 
-    .link-wrapper {
-        text-align: center;
+        .link-wrapper {
+            text-align: center;
 
-        .link {
-            margin: 10px;
-            display: inline-block;
-            color: #fafafa;
+            .link {
+                margin: 10px;
+                display: inline-block;
+                color: #fafafa;
+            }
         }
     }
 }
