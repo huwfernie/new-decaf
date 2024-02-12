@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Home from './views/Home';
+import Catalogue from './views/Catalogue';
 // import reportWebVitals from './reportWebVitals';
 
 import {
@@ -10,7 +11,6 @@ import {
 } from "react-router-dom";
 
 if (process.env.NODE_ENV === "development") {
-  console.dir(document.title);
   document.title = "l'host - " + document.title;
 } 
 
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/catalogue",
-    element: <div>Coming soon.</div>,
+    element: <Catalogue />,
   },
 ]);
 
