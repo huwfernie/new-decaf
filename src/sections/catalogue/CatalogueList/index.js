@@ -8,8 +8,8 @@ function CatalogueList({ items }) {
       <h2 className="filters-headline">Catalogue List</h2>
       <div className="catalogue-list">
         {
-          items.map((item) => {
-            return <CatalogueListItem data={item} />
+          items.map((item, index) => {
+            return <CatalogueListItem data={item} key={index} />
           })
         }
       </div>
