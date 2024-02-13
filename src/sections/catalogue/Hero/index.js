@@ -6,6 +6,7 @@ function Hero() {
   return (
     <Section name="hero">
       <h1 className="hero-headline">Catalogue</h1>
+      <p className="hero-tagline">Every bean we've ever seen.</p>
     </Section>
   );
 }
