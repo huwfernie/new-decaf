@@ -5,28 +5,27 @@ import ToggleButton from '../../../components/ToggleButton';
 function Filters() {
   return (
     <Section name="filters">
-      <h2 className="filters-headline">Filters</h2>
       <div className="grid">
         <div className="process-list">
-          <h3>Process</h3>
+          <h3 className="heading">Process</h3>
           <ToggleButton text="Direct-Solvent" selected={true} />
           <ToggleButton text="Indirect-Solvent" selected={true} />
           <ToggleButton text="Swiss Water" selected={true} />
           <ToggleButton text="Carbon Dioxide" selected={true} />
         </div>
         <div className="process-list">
-          <h3>Origin</h3>
+          <h3 className="heading">Origin</h3>
           <ToggleButton text="Single Origin" selected={true} />
           <ToggleButton text="Blended" selected={true} />
         </div>
         <div className="process-list">
-          <h3>Roast</h3>
+          <h3 className="heading">Roast</h3>
           <ToggleButton text="Light" selected={true} />
           <ToggleButton text="Medium" selected={true} />
           <ToggleButton text="Dark" selected={true} />
         </div>
         <div className="process-list">
-          <h3>Farming</h3>
+          <h3 className="heading">Farming</h3>
           <ToggleButton text="Organic" selected={true} />
         </div>
       </div>
