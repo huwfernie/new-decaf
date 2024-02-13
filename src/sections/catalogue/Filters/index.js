@@ -2,32 +2,28 @@ import './styles.scss';
 import Section from '../../../components/section';
 import ToggleButton from '../../../components/ToggleButton';
 
-function Filters() {
+function Filters({ data, setFilters }) {
+  const _headings = Object.keys(data);
+  
+  function handleFilterChange(heading, index) {
+    let _filters = {...data};
+    _filters[heading][index].selected = !data[heading][index].selected;
+    setFilters(_filters);
+  }
+
   return (
     <Section name="filters">
       <div className="grid">
-        <div className="process-list">
-          <h3 className="heading">Process</h3>
-          <ToggleButton text="Direct-Solvent" selected={true} />
-          <ToggleButton text="Indirect-Solvent" selected={true} />
-          <ToggleButton text="Swiss Water" selected={true} />
-          <ToggleButton text="Carbon Dioxide" selected={true} />
-        </div>
-        <div className="process-list">
-          <h3 className="heading">Origin</h3>
-          <ToggleButton text="Single Origin" selected={true} />
-          <ToggleButton text="Blended" selected={true} />
-        </div>
-        <div className="process-list">
-          <h3 className="heading">Roast</h3>
-          <ToggleButton text="Light" selected={true} />
-          <ToggleButton text="Medium" selected={true} />
-          <ToggleButton text="Dark" selected={true} />
-        </div>
-        <div className="process-list">
-          <h3 className="heading">Farming</h3>
-          <ToggleButton text="Organic" selected={true} />
-        </div>
+          {_headings.map((heading, index) => {
+            return (
+              <div key={index} className="process-list">
+                <h3 className="heading">{heading}</h3>
+                {data[heading].map((item, index) => {
+                  return <ToggleButton key={index} text={item.name} selected={item.selected} clickFn={() => handleFilterChange(heading, index)} />
+                })}
+              </div>
+            )
+          })}
       </div>
     </Section>
   );

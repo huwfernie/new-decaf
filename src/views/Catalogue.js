@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import NavigationBar from '../components/NavigationBar';
 import Hero from '../sections/catalogue/Hero';
 import Filters from '../sections/catalogue/Filters';
@@ -64,14 +65,66 @@ const pageData = {
   ]
 }
 
+const _filters = {
+  Process: [
+    {
+      name: "Direct-Solvent",
+      selected: true
+    },
+    {
+      name: "Indirect-Solvent",
+      selected: true
+    },
+    {
+      name: "Swiss Water",
+      selected: true
+    },
+    {
+      name: "Carbon Dioxide",
+      selected: true
+    }
+  ],
+  Origin: [
+    {
+      name: "Single Origin",
+      selected: true
+    },
+    {
+      name: "Blended",
+      selected: true
+    }
+  ],
+  Roast: [
+    {
+      name: "Light",
+      selected: true
+    },
+    {
+      name: "Medium",
+      selected: true
+    },
+    {
+      name: "Dark",
+      selected: true
+    }
+  ],
+  Farming: [
+    {
+      name: "Organic",
+      selected: true
+    },
+  ]
+}
+
 function Catalogue() {
   const menu = useMenu();
+  const [filters, setFilters] = useState(_filters);
 
   return (
     <div className="page-catalogue">
       <NavigationBar menu={menu} />
       <Hero />
-      <Filters />
+      <Filters data={filters} setFilters={setFilters} />
       <CatalogueList items={pageData.results} />
       <Footer data={pageData} />
       <Menu menu={menu} />

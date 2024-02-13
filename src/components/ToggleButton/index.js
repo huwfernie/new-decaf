@@ -1,6 +1,6 @@
 import './styles.scss';
 
-function ToggleButton({ text, selected }) {
+function ToggleButton({ text, selected, clickFn }) {
     let _className = ""
     
     if (selected) {
@@ -10,7 +10,7 @@ function ToggleButton({ text, selected }) {
     }
     
     return (
-        <button className={_className}>
+        <button className={_className} onClick={clickFn}>
             <input type="checkbox" checked={selected} readOnly={true} />
             {text}
         </button>
