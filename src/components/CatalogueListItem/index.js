@@ -8,10 +8,11 @@ function CatalogueListItem({ data }) {
     return (
         <div className="catalogue-list-item">
             <h3 className="headline">{data.headline}</h3>
-            <div>Process: {process}</div>
-            <div>Origin: {origin}</div>
-            {data.singleOrigin ? <span>Single Origin</span> : <span>Blended</span>}
             <Picture image={data.image} />
+            <p className="body">{data.body}</p>
+            <div className="process">Process: {process}</div>
+            <div className="origin">Origin: {origin}</div>
+            <div className="single-origin">{data.singleOrigin ? <span>Single Origin</span> : <span>Blended</span>}</div>
         </div>
     );
 }
