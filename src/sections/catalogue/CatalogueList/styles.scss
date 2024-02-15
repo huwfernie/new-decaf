@@ -3,6 +3,14 @@
 
 .page-catalogue {
     .section.section-catalogue-list {
-        
+        .catalogue-list {
+            display: grid;
+            row-gap: 20px;
+
+            @include for-xlarge {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 20px;
+            }
+        }
     }
 }

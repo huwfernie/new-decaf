@@ -4,15 +4,10 @@
 .catalogue-list-item {
     border: 1px solid grey;
     border-radius: 15px;
-    margin-bottom: 3em;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 
     .headline {
         grid-area: 1 / 1 / 1 / 7;
