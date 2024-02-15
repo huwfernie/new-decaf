@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
+    background-color: whitesmoke;
 
     .headline {
         grid-area: 1 / 1 / 1 / 7;
