@@ -1,4 +1,19 @@
 .toggle-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 7px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0.3em;
+
+    input {
+        background-color: inherit;
+        pointer-events: none;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
 }
-
