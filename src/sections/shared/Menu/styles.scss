@@ -13,6 +13,7 @@
     transition-delay: 0s;
     text-align: center;
     font-weight: bold;
+    z-index: 1000;
     
     &.hidden {
         transition-duration: 0.5s;
