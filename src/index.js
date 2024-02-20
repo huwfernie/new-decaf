@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Home from './views/Home';
 import Catalogue from './views/Catalogue';
+import About from './views/About';
 // import reportWebVitals from './reportWebVitals';
 
 import {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/catalogue",
     element: <Catalogue />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 
