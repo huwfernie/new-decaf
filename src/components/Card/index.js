@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Link from '../Link';
 import Picture from '../Picture';
 import './styles.scss';
@@ -7,6 +7,7 @@ function Card({ title, image, cardText, linkUrl }) {
     const canvasRef = useRef(null);
     const imageRef = useRef(null);
     const cardRef = useRef(null);
+    const [isIntersecting, setIsIntersecting] = useState(false);
 
     /**
      * On Load of image, copy image to canvas (hidden el using css) and read RGB colour value for top left pixel
@@ -32,6 +33,25 @@ function Card({ title, image, cardText, linkUrl }) {
             cardRef.current.style.backgroundColor = `rgb(${pixel[0]} ${pixel[1]} ${pixel[2]})`;
         }
     }
+
+    useEffect(() => {
+        cardRef.current.classList.add("slide-in-setup");
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsIntersecting(entry.isIntersecting);
+            },
+            { rootMargin: "-300px" }
+        );
+        observer.observe(cardRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        if (isIntersecting) {
+            cardRef.current.classList.add("reveal");
+        }
+    }, [isIntersecting]);
 
     return (
         <div ref={cardRef} className="card">

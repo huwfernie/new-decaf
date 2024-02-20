@@ -12,11 +12,12 @@
         height: -webkit-fill-available;
 
         display: none;
+
         @include for-medium {
             display: unset;
         }
     }
-    
+
     .picture {
         align-self: center;
         @include image-for-xsmall(216px, 216px);
@@ -25,25 +26,42 @@
         @include image-for-large(310px, 310px);
         @include image-for-xlarge(320px, 320px);
     }
-    
+
     &-image {
         visibility: hidden;
         height: 0px;
         width: 0px;
     }
-    
+
     &-image-canvas {
         visibility: hidden;
         height: 0px;
         width: 0px;
     }
-    
+
     .link {
         margin-top: 1em;
         align-self: center;
-        
+
         @include for-medium {
             margin-top: unset;
+        }
+    }
+
+    &.slide-in-setup {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: transform 700ms, opacity 500ms;
+
+        &:nth-child(even) {
+            @include for-small {
+                transition-delay: 350ms;
+            }
+        }
+
+        &.reveal {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 }
